@@ -1,0 +1,22 @@
+{
+  "name": "angular-generator",
+  "version": "1.0.0",
+  "description": "Welcome to erre angular generator",
+  "main": "index.js",
+  "bin": {
+    "@silmi/errea": "bin/create-project",
+    "errea": "bin/create-project"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "errea"
+  ],
+  "author": "francisco/leandrMachado",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}

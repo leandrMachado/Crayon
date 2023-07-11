@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const yargs = require("yargs");
+const crayon = require("../crayon/crayon");
+
+yargs
+  .command(
+    "new [name]",
+    "Creates a new erre API workspace with name 'erre'.",
+    (yargs) => {
+      yargs.positional("name", {
+        describe: "The name of the new erre API.",
+        type: "string",
+        default: "erre",
+      });
+    },
+    async (argv) => console.log(crayon.red("ola"))
+  )
+  .help().argv;
